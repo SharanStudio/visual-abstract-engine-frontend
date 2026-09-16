@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const backendURL = import.meta.env.VITE_BACKEND_URL;
+const backendURL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
 
 export const useAbstractAPI = () => {
   const generateAbstract = async (data: any) => {
